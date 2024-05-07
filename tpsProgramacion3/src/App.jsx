@@ -1,17 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import Table from './components/table/Table';
+import Login from './components/login/Login'
 
 function App() {
-  const netIncomes = [
-    {brand: "McDonalds", income: 1291283},
-    {brand: "Burger King", income: 1927361}, 
-    {brand: "KFC", income: 1098463}
-  ];
+  
 
   return (
     <>
-      <Table data={netIncomes}/> 
+      <Login/>
     </>
   )
 }
