@@ -1,13 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Login from './components/login/Login'
+import { useState } from 'react';
+import './App.css';
+import WorkList from './components/workList/WorkList';
+import NewWork from './components/newWork/NewWork';
+
 
 function App() {
-  
+  const [works, setWorks] = useState([]);
 
   return (
     <>
-      <Login/>
+      
+      <NewWork works={works} setWork={setWorks}/>
+      
+      <WorkList works={works} setWork={setWorks}/>
+      
     </>
   )
 }
